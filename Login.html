@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+    <div class="container">
+        <img src="Logo.png" alt="ALDENAIRE Logo" class="logo">
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="managerName">Enter Manager's Name:</label>
+                <input type="text" id="managerName" name="managerName" required pattern="[A-Za-z\s]{3,}" title="Manager's name must be at least 3 characters long and contain only letters">
+            </div>
+            <div class="input-group">
+                <label for="password">Enter Password:</label>
+                <input type="password" id="password" name="password" required minlength="6" title="Password must be at least 6 characters long">
+            </div>
+            <button type="button" onclick="validateLogin()">Login</button>
+        </form>
+    </div>
+    <script src="Login.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    padding: 20px; 
+    margin: 20px 5px;
+    border: 4px solid #b69c55;
+    border-radius: 2px;
+    justify-content: center;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-right: 35px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.container ul{
+    font-size: 1.2rem;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #b69c55;
+    border-bottom: 2px solid #dcdcdc;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.dashboard-header h1 {
+    font-size: 2.5rem;
+    margin: 10;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.dashboard-header button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: rgb(21, 19, 19);
+    color: #dcdcdc;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; 
+    margin-right: 25px;
+}
+
+.dashboard-header button:hover {
+    background-color: #ab2a1eec;
+}
+
+
+.dashboard-nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 25px 10px;
+    margin: 0;
+    background-color: #e0e0e0;
+}
+
+.dashboard-nav ul li {
+    margin: 0px 5px;
+}
+
+.dashboard-nav ul li a {
+    text-decoration: none;
+    color: #b69c55;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.dashboard-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.dashboard-main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.selected-players-section, .players-section, .available-players-section {
+    border: 2px solid #007bff;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.selected-players-section ul, .players-section ul, .available-players-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.selected-players-section ul li, .players-section ul li, .available-players-section ul li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}

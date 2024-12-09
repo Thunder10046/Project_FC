@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Dashboard</title>
+    <link rel="stylesheet" href="/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <div class="logo" style="background-image: url('/Logo.png');"></div>
+            <h1>Manager Dashboard</h1>
+            <button onclick="logout()">Logout</button>
+        </header>
+        <main>
+            <nav class="dashboard-nav">
+                <ul>
+                    <li><a href="/" class="Nav_home">Home</a></li>
+                    <li><a href="/Club_history.html" class="Nav_Club_history">Club History</a></li>
+                    <li><a href="/AboutUs.html" class="Nav_about_us">About Us</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Debugging: Display the players array -->
+            <pre><%= JSON.stringify(players, null, 2) %></pre>
+
+            <section class="dashboard-main">
+                <div class="selected-players-section">
+                    <h2>Players Selected for Next Match</h2>
+                    <ul>
+                        <% players.forEach(player => { %>
+                            <% if (player.selected) { %>
+                                <li><%= player.name %> - <%= player.position %>, Age: <%= player.age %></li>
+                            <% } %>
+                        <% }); %>
+                    </ul>
+                </div>
+
+                <div class="lower-sections">
+                    <div class="players-section">
+                        <h2>All Players</h2>
+                        <ul>
+                            <% players.forEach(player => { %>
+                                <li>
+                                    <%= player.name %> - <%= player.position %>, Age: <%= player.age %>, Goals: <%= player.goals %>
+                                </li>
+                            <% }); %>
+                        </ul>
+                    </div>
+                    <div class="available-players-section">
+                        <h2>Available Players</h2>
+                        <ul>
+                            <% players.forEach(player => { %>
+                                <% if (player.red_cards === 0 && player.yellow_cards < 3) { %>
+                                    <li>
+                                        <%= player.name %> - <%= player.position %>, Age: <%= player.age %>
+                                    </li>
+                                <% } %>
+                            <% }); %>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script>
+        function logout() {
+            alert('You have been logged out.');
+            window.location.href = 'login.html';
+        }
+    </script>
+</body>
+</html>

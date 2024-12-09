@@ -1,0 +1,202 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+
+}
+
+body{
+    background-color: #151313;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.header{
+    height: 90px;
+    background-color: #b69c55;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+}
+
+
+.navbar{
+    display: flex;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    color: white;
+
+}
+
+.Name_of_company{
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.menu{
+    margin-left: auto;
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.logo{
+    width: 188px;
+    height: 190px;
+    background-image: url(Logo.png);
+    background-size: cover;
+    top: 80px;
+    margin-left: 50px;
+    border-radius: 250px;
+    padding: 25px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas: "grid_item1 grid_item2";
+    height: 100vh;
+    width: 100vw;
+    padding: 40px;
+    margin-top: 95px;
+
+}
+
+.grid_item1 h1{
+
+    font-size: 30px;
+    margin: 30px;
+    font-weight: 800;
+    margin-left: 50px;
+    border-bottom: 3px solid white;
+    padding-bottom: 15px;
+}
+
+.grid_item1 p{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 30px;
+    margin-left: 50px;
+    text-align: justify;
+    color: #fcfdff ;
+}
+
+.box_abt{
+    padding: 15px;
+    width: 500px;
+    height: 500px;
+    border-right: 5px solid transparent;
+    border-right-color: #ffffff;
+    padding-bottom: 15px;
+}
+
+.grid-item2 {
+    height: 300px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 0.75em;
+}
+
+
+.chobi {
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    background-size: cover;
+    border-radius: 0.75em;
+    background-repeat: no-repeat;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.name{
+    font-size: 30px;
+    font-weight: 800;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.position{
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.Nav_about_us{
+    color: white;
+    text-decoration: none;
+}
+
+.Nav_about_us:hover{
+    color: rgba(0, 0, 0, 0.91) ;
+}
+
+.Nav_home{
+    color: white;
+    text-decoration: none;
+}
+
+.Nav_home:hover{
+    color: rgba(0, 0, 0, 0.91) ;
+}
+
+.Nav_Club_history{
+    color: white;
+    text-decoration: none;
+}
+
+.Nav_Club_history:hover{
+    color: #000000e8 ;
+}
+
+.ce{
+    height: 700px;
+    width: 600px;
+    margin-left: 0;
+    padding: 2px;
+}
+
+.ce h1{
+    font-size: 45px;
+    margin: 30px;
+    font-weight: 900;
+    margin-left: 0px;
+    border-bottom: 3px solid white;
+    padding-bottom: 15px;
+}
+
+.ce p{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-align: justify;
+
+}
+
+.box{
+    padding: 15px;
+    width: 500px;
+    height: 800px;
+    border: 2px solid transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.ce_img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    border-radius: 0.75rem;
+    padding: 10px;
+}
+
